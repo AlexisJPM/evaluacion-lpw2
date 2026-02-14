@@ -1,11 +1,11 @@
 import { Component, inject, signal } from '@angular/core';
-import { FormBuilder, FormsModule, Validators } from '@angular/forms';
+import { FormBuilder, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { ProductoService } from '../../services/producto-service';
 import { Product } from '../../model/producto';
 
 @Component({
   selector: 'app-form',
-  imports: [FormsModule],
+  imports: [ReactiveFormsModule],
   templateUrl: './form.html',
   styleUrl: './form.css',
 })
